@@ -1,11 +1,12 @@
 {
-  "name": "bot-discord-kotei",
+  "name": "bot-statut",
   "version": "1.0.0",
   "main": "statut.js",
   "scripts": {
     "start": "node statut.js"
   },
   "dependencies": {
-    "discord.js": "^14.14.1"
+    "discord.js": "^14.14.1",
+    "express": "^4.19.2"
   }
 }
