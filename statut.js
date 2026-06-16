@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 app.get('/', (req, res) => res.send('Le bot statut est en ligne !'));
-app.listen(process.env.PORT || 3000);const { Client, GatewayIntentBits } = require('discord.js');
+app.listen(process.env.PORT || 3000);
+
+const { Client, GatewayIntentBits } = require('discord.js');
 
 const client = new Client({
     intents: [
@@ -11,7 +13,8 @@ const client = new Client({
     ]
 });
 
-const ROLE_ID = '1516115814837649509';
+// Ton nouveau rôle mis à jour ici
+const ROLE_ID = '1516472791359033374';
 const TRIGGER_STATUS = '/kotei';
 
 client.once('ready', () => {
